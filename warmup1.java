@@ -80,27 +80,27 @@ public int close10(int a, int b) {
 
 stringE
 public boolean stringE(String str) {
-    int count = 0;
-      char current;
-        for (int i = 0; i < str.length(); i++) {
-              current = str.charAt(i);
-                  if (current == 'e') {
-                          count++;
-                              }
-                    }
-          return (count >= 1 && count <= 3);
+  int count = 0;
+  char current;
+  for (int i = 0; i < str.length(); i++) {
+    current = str.charAt(i);
+    if (current == 'e') {
+      count++;
+    }
+  }
+  return (count >= 1 && count <= 3);
 }
 
 everyNth
 public String everyNth(String str, int n) {
-    String result = "";
-          for (int i = 0; i < str.length(); i ++) {
-                    if (i % n == 0) {
-                                 result = result + str.charAt(i);
-                                        }
+  String result = "";
+  for (int i = 0; i < str.length(); i ++) {
+    if (i % n == 0) {
+      result = result + str.charAt(i);
+    }
 
-                          }
-                  return result;
+  }
+  return result;
 }
 
 monkeyTrouble
